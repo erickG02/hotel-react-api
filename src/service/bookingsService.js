@@ -1,7 +1,7 @@
 import axios from "axios";
 export const getAllCalendarBookings = async () => {
   const API_BASE = "https://apibookingsaccomodations-production.up.railway.app/api/V1";
-  const token = sessionStorage.getItem("nubix_token");
+  const token = sessionStorage.getItem("token");
   const headers = { Authorization: `Bearer ${token}` };
 
   const [bookingsRes, accommodationsRes, usersRes] = await Promise.all([

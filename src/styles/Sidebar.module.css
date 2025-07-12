@@ -1,0 +1,75 @@
+:root{
+  --color-primario:#f3f4f6;
+  --color-secundario:#444;
+  --color-activo:#4157ff;
+  --color-acento:#e5e7eb;
+  --color-title:#000;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 13rem;
+  height: 42rem;
+  background-color: var(--color-primario);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  color: var(--color-title);
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link {
+  color: var(--color-secundario);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: .5rem;
+  transition: background 0.4s;
+}
+
+.link:hover {
+  background-color: var(--color-acento);
+  transform: scale(1.02);
+}
+
+.active {
+  background-color: var(--color-acento);
+  font-weight: bold;
+  color: var(--color-activo);
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.footer {
+ margin-bottom: 1rem;
+}
+
+.logout {
+  background: none;
+  border: none;
+  color: var(--color-secundario);
+  cursor: pointer;
+}
+
+.logout:hover {
+  text-decoration: underline;
+ color:var(--color-activo);
+ transition: background 0.3s;
+   transform: scale(1.02);
+}

@@ -1,6 +1,14 @@
 .fullscreenCalendar {
-  width: 80vw;
-  height: calc(100vh - 2rem);
-  margin: 0;
-  padding: 0;
+  width: 70vw;
+  height: calc(100vh - 6rem);
+}
+:global(.fc-toolbar-title) {
+  color:#1E2B37;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+:global(.fc-theme-standard td),
+:global(.fc-theme-standard th){
+  border-color: #1E2B37;
 }
