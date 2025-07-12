@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MyCalendar from "../components/reservations/MyCalendar";
 import MainLayout from "../layout/MainLayout";
 import Login from "../components/accommodations/Login";
-import ListarAlojamientos from "./components/Accommodations/AccommodationsList";
+import styles from '../styles/accommodations/accommodationsList.module.css';
+import   ListarAlojamientos from "../components/accommodations/AccommodationsList";
 export default function AppRoutes(){
     return (
         <Router>
@@ -13,7 +14,7 @@ export default function AppRoutes(){
                 path="/alojamientos"
                 element={
                 <>
-                    <h1 className="page-title">Alojamientos</h1>
+                    <h1 className={styles["page-title"]}>Alojamientos</h1>
                     <ListarAlojamientos />
                 </>
                         }

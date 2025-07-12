@@ -1,8 +1,10 @@
 import './App.css'
+import AppRoutes from './routes/Rutas';
+
 function App() {
   return (
     <>
-      <MyCalendar />
+      <AppRoutes />
     </>
   );
 }

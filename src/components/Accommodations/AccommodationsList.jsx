@@ -6,7 +6,7 @@ export default function ListarAlojamientos() {
   const [alojamientos, setAlojamientos] = useState([]);
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
+    const token = sessionStorage.getItem("token");
 
     axios
       .get(
@@ -44,7 +44,7 @@ export default function ListarAlojamientos() {
             </p>
           </div>
         ))}
-      </div>
+      </div>   
     </div>
   );
 }

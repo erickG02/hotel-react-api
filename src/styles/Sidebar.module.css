@@ -1,5 +1,5 @@
 
-/*
+
 :root{
   --color-primario:#f3f4f6;
   --color-secundario:#444;
@@ -75,14 +75,15 @@
  transition: background 0.3s;
    transform: scale(1.02);
 }
-*/
 
+/*
 .app-container {
   display: flex;
   min-height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-/*menu */
+
+/*
 .sidebar {
   width: 250px;
   background: linear-gradient(135deg, #6e8efb, #a777e3);
@@ -90,7 +91,7 @@
   padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between;*/
+  /* justify-content: space-between;
   position: sticky;
   top: 0;
   height: 100vh;
@@ -141,7 +142,7 @@
   height: 20px;
 }
 
-/* cerrar sessionn */
+/* cerrar sessionn 
 .logout-btn {
   background-color: #ef4444;
   color: white;
@@ -173,3 +174,4 @@
   padding-bottom: 1rem;
   border-bottom: 2px solid #6e8efb;
 }
+*/

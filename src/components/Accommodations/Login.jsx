@@ -22,7 +22,7 @@ export default function Login() {
       );
 
       const token = response.data.token;
-      localStorage.setItem("token", token);
+      sessionStorage.setItem("token", token);
 
       navigate("/alojamientos");
     } catch (error) {
