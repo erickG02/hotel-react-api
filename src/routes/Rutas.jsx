@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MyCalendar from "../components/reservations/MyCalendar";
 import MainLayout from "../layout/MainLayout";
-import Login from "../components/accommodations/Login";
-import styles from '../styles/accommodations/accommodationsList.module.css';
+import Login from "../components/login/Login";
 import   ListarAlojamientos from "../components/accommodations/AccommodationsList";
 import AccommodatonsForm from "../components/accommodations/AccommodationsForm";
 import BookingsList from "../components/reservations/BookingsList";
