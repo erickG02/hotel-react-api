@@ -38,6 +38,15 @@ export default function Sidebar(){
             <FaClipboardList className={style.icon} />
             Reservaciones
           </Link>
+           <Link
+            to="/tablareserva"
+            className={`${style.link} ${
+              location.pathname === "/tablareserva" ? style.active : ""
+            }`}
+          >
+            <FaClipboardList className={style.icon} />
+            Tabla Reservaciones
+          </Link>
         </nav>
       </div>
 
@@ -50,74 +59,4 @@ export default function Sidebar(){
     </aside>
   );
     
-
-/*
-   const navigate = useNavigate();
-
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    navigate("/");
-  };
-
-  // Dashboard
-  return (
-    <div className={style["app-container"]}>
-      <aside className={style.sidebar}>
-        <div>
-          <div className={style["menu-header"]}>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/2222/2222971.png"
-              alt="panel"
-              className={style["menu-icon-large"]}
-            />
-            <h2 className={style["menu-title"]}>Panel de Control</h2>
-          </div>
-
-          <nav className={style["menu-section"]}>
-            <NavLink
-              to="/alojamientos"
-              className={({ isActive }) =>
-                isActive ? "menu-item active" : "menu-item"
-              }
-            >
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png"
-                alt="hotel"
-                className={style["menu-icon"]}
-              />
-              Alojamientos
-            </NavLink>
-
-            <NavLink
-              to="/reservaciones"
-              className={({ isActive }) =>
-                isActive ? "menu-item active" : "menu-item"
-              }
-            >
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/888/888879.png"
-                alt="calendar"
-                className={style["menu-icon"]}
-              />
-              Reservaciones
-            </NavLink>
-          </nav>
-        </div>
-
-        <button className={style["logout-btn"]} onClick={handleLogout}>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/1828/1828490.png"
-            alt="logout"
-            className={style["menu-icon"]}
-          />
-          Cerrar Sesión
-        </button>
-      </aside>
-
-      <main className={style["main-content"]}>
-        <Outlet />
-      </main>
-    </div>
-  );
-  */
 }

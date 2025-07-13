@@ -1,3 +1,28 @@
+:root {
+  /* Fondos */
+  --color-bg-card: #cceffd;
+  --color-bg-input: #f9f9f9;
+  --color-bg-error: #fee2e2;
+
+  /* Textos */
+  --color-text-primary: #2c3e50;
+  --color-text-secondary: #555;
+  --color-text-support: #777;
+  --color-text-note: #999;
+  --color-text-error: #b91c1c;
+  --color-text-white: #ffffff;
+  --color-link: #3b82f6;
+
+  /* Bordes */
+  --color-border-input: #0abdf8;
+
+  /* Botones */
+  --color-button-bg: #1e293b;
+  --color-button-hover: #111827;
+
+  /* Sombras */
+  --color-shadow: rgba(0, 0, 0, 0.1);
+}
 .loginPage {
   height: 80vh;
   width: 100%;
@@ -6,22 +31,24 @@
   align-items: center;
   padding: 2rem;
   box-sizing: border-box;
+  color: var(--color-text-primary);
 }
 
 .loginCard {
-  background-color: #cceffd;
+  background-color: var(--color-bg-card);
   padding: 2.5rem 2rem;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px var(--color-shadow);
   width: 100%;
   max-width: 420px;
   text-align: center;
+  color: var(--color-text-primary);
 }
 
 .loginPage,
 .loginCard,
 .loginCard * {
-  color: #2c3e50;
+  color: var(--color-text-primary);
 }
 
 .loginHeader img {
@@ -32,11 +59,11 @@
 .loginHeader h2 {
   margin: 0;
   font-size: 1.4rem;
-  color: #2c3e50;
+  color: var(--color-text-primary);
 }
 
 .loginHeader p {
-  color: #555;
+  color: var(--color-text-secondary);
   font-size: 0.9rem;
   margin-bottom: 1.5rem;
 }
@@ -61,9 +88,9 @@
 .inputWithIcon {
   display: flex;
   align-items: center;
-  border: 1px solid #0abdf8;
+  border: 1px solid var(--color-border-input);
   border-radius: 6px;
-  background-color: #f9f9f9;
+  background-color: var(--color-bg-input);
   padding: 0.5rem;
 }
 
@@ -82,8 +109,8 @@
 }
 
 .loginButton {
-  background-color: #1e293b;
-  color: white;
+  background-color: var(--color-button-bg);
+  color: var(--color-text-white);
   padding: 0.6rem 1rem;
   font-size: 1rem;
   border: none;
@@ -101,17 +128,17 @@
 }
 
 .loginButton:hover {
-  background-color: #111827;
+  background-color: var(--color-button-hover);
 }
 
 .support {
   font-size: 0.85rem;
-  color: #777;
+  color: var(--color-text-support);
   margin-top: 1.2rem;
 }
 
 .support a {
-  color: #3b82f6;
+  color: var(--color-link);
   text-decoration: none;
 }
 
@@ -122,12 +149,12 @@
 .note {
   margin-top: 0.5rem;
   font-size: 0.75rem;
-  color: #999;
+  color: var(--color-text-note);
 }
 
 .error {
-  background-color: #fee2e2;
-  color: #b91c1c;
+  background-color: var(--color-bg-error);
+  color: var(--color-text-error);
   padding: 0.6rem;
   border-radius: 6px;
   margin-bottom: 1rem;

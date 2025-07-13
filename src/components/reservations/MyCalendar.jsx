@@ -16,7 +16,12 @@ export default function MyCalendar () {
         const data = await getAllCalendarBookings();
         setEvents(data);
       } catch (err) {
-        console.error("Error al cargar eventos", err);
+           Swal.fire({
+              icon: "error",
+              title: "Error al cargar los datos",
+              text: "Verifica los datos e intenta nuevamente.",
+              confirmButtonColor: "#e62525"
+            });
       }
     };
     loadEvents();

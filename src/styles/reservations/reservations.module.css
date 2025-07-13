@@ -1,0 +1,170 @@
+:root {
+  /* Fondos */
+  --color-bg-light: #fafafa;
+  --color-bg-white: #ffffff;
+  --color-bg-hover: #f0f8ff;
+
+  /* Texto */
+  --color-text-dark: #222;
+  --color-text: #333;
+  --color-text-light: #444;
+  --color-title: #2c3e50;
+  --color-highlight: #2980b9;
+
+  /* Bordes */
+  --color-border-light: #ccc;
+  --color-border-medium: #ddd;
+
+  /* Botones */
+  --color-button-primary: #3478f6;
+  --color-button-danger: #c0392b;
+  --color-button-text: #ffffff;
+
+  /* Efectos */
+  --color-shadow-light: rgba(0, 0, 0, 0.1);
+  --color-shadow-medium: rgba(0, 0, 0, 0.25);
+  --color-shadow-heavy: rgba(0, 0, 0, 0.3);
+  --color-overlay-strong: rgba(0, 0, 0, 0.6);
+  --color-overlay-medium: rgba(0, 0, 0, 0.5);
+  --color-focus: rgba(52, 120, 246, 0.2);
+}
+.bookingsList {
+  max-width: 100%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  background: var(--color-bg-light);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px var(--color-shadow-light);
+  color: var(--color-text-light);
+}
+
+.bookingsList h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--color-title);
+}
+
+.bookingItem {
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-border-medium);
+  border-radius: 6px;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  transition: box-shadow 0.2s ease;
+  color: var(--color-text);
+}
+
+.bookingItem:hover {
+  box-shadow: 0 4px 12px var(--color-shadow-light);
+  background-color: var(--color-bg-hover);
+}
+
+.bookingItem strong {
+  font-size: 1.1em;
+  color: var(--color-highlight);
+}
+
+.bookingItem br {
+  margin-bottom: 4px;
+  content: "";
+  display: block;
+}
+
+.error {
+  color: var(--color-button-danger);
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--color-overlay-strong);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.modalContent {
+  background: var(--color-bg-white);
+  padding: 24px 28px;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px var(--color-shadow-medium);
+  width: 100%;
+  max-width: 400px;
+  animation: popUp 0.3s ease-in-out;
+}
+
+@keyframes popUp {
+  from { transform: scale(0.95); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
+.modalContent h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 20px;
+  text-align: center;
+  color: var(--color-text-dark);
+}
+
+.form label {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border-light);
+  outline: none;
+  transition: 0.2s;
+  font-size: 14px;
+  background-color: var(--color-bg-white);
+  color: var(--color-text-light);
+}
+
+.form input:focus {
+  border-color: var(--color-button-primary);
+  box-shadow: 0 0 0 3px var(--color-focus);
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.createBtn {
+  margin-bottom: 12px;
+  padding: 6px 12px;
+  background-color: var(--color-button-primary);
+  color: var(--color-button-text);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btnCancelar {
+  background-color: var(--color-button-danger);
+  color: var(--color-button-text);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}

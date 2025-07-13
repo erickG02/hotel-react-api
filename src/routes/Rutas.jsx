@@ -4,6 +4,9 @@ import MainLayout from "../layout/MainLayout";
 import Login from "../components/accommodations/Login";
 import styles from '../styles/accommodations/accommodationsList.module.css';
 import   ListarAlojamientos from "../components/accommodations/AccommodationsList";
+import AccommodatonsForm from "../components/accommodations/AccommodationsForm";
+import BookingsList from "../components/reservations/BookingsList";
+
 export default function AppRoutes(){
     return (
         <Router>
@@ -14,12 +17,14 @@ export default function AppRoutes(){
                 path="/alojamientos"
                 element={
                 <>
-                    <h1 className={styles["page-title"]}>Alojamientos</h1>
+
                     <ListarAlojamientos />
                 </>
                         }
             />
                  <Route path="/reservaciones" element={<MyCalendar/>}/>
+                     <Route path="/accommodations/create" element={<AccommodatonsForm />} />
+                         <Route path="/tablareserva" element={<BookingsList />} />
                  </Route>
             </Routes>
         </Router>
