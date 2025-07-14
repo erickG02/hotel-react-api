@@ -263,7 +263,7 @@
     "@eslint/core" "^0.15.1"
     levn "^0.4.1"
 
-"@fullcalendar/core@~6.1.18":
+"@fullcalendar/core@^6.1.18", "@fullcalendar/core@~6.1.18":
   version "6.1.18"
   resolved "https://registry.npmjs.org/@fullcalendar/core/-/core-6.1.18.tgz"
   integrity sha512-cD7XtZIZZ87Cg2+itnpsONCsZ89VIfLLDZ22pQX4IQVWlpYUB3bcCf878DhWkqyEen6dhi5ePtBoqYgm5K+0fQ==
